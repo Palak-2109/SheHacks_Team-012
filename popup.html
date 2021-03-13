@@ -1,0 +1,53 @@
+<!-- window.resizeBy(60px,600px) -->
+<html xmlns="http://www.w3.org/1999/xhtml" style="min-width:400px;"></html>
+<!DOCTYPE html>
+<html lang="en">
+        <head>
+                <meta charset="UTF-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Document</title>
+
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link rel="preconnect" href="https://fonts.gstatic.com">
+                <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+                <link href="stylesheet.css" rel="stylesheet">
+        </head>
+        <body>
+                <div class="headerrow">
+                        <div class="logo">MemoryOrder </div>
+                        <div class="sortbtcont">
+                                <button id="sortbt">Sort Tabs</button>
+                        </div>
+                </div>
+                <div class="tablistcont">
+
+                        <table id="tablist">
+
+                        </table>
+                </div>
+                <div class="closetimecont">
+                        <div class="timein">
+                                <div id="timeafter" class="hide" >
+                                        <input type="time" id="timeformafter">
+                                        time after
+                                </div>
+
+                                        <label class="switch">
+                                                <input type="checkbox" id="timetoggle">
+                                                <span class="slider round"></span>
+                                        </label>
+
+                                        <div id="timeat">
+                                                time at
+                                                <input type="time" id="timeformat">
+                                        </div>
+                        </div>
+                        <button id="scheduleclose">schedule close</button>
+                        <div id="warningplaceholder"></div>
+
+                </div>
+        </body>
+        <script src="popup.js"></script>
+</html>

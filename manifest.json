@@ -1,0 +1,24 @@
+{
+        "manifest_version": 2,
+        "name": "MemoryOrder",
+        "icons": {
+                "300": "assets/icon.png"
+        },
+        "version": "0.1",
+        "permissions": ["tabs",
+                "http://*/",
+                "https://*/"
+        ],
+
+        "browser_action": {
+                "default_icon": {
+                        "16": "assets/icon.png"
+                },
+                "default_title": "Sort by memory used",
+                "default_popup": "popup.html"
+
+        },
+        "background": {
+                "scripts": ["background.js"]
+        }
+}
