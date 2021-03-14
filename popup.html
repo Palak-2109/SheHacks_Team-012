@@ -8,45 +8,47 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <title>Document</title>
 
-                <link rel="preconnect" href="https://fonts.gstatic.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com">
-                <link rel="preconnect" href="https://fonts.gstatic.com">
-                <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-                <link href="stylesheet.css" rel="stylesheet">
+                <!--  <link rel="preconnect" href="https://fonts.gstatic.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com">
+                        <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+
+                        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYi                 iSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+                        <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet"> -->
+                        <link rel="preconnect" href="https://fonts.gstatic.com">
+                        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+                        <link href="stylesheet.css" rel="stylesheet">
+
+                        <!-- aka comment polo's links and added bootstrap + google fonts links -->
+
         </head>
         <body>
                 <div class="headerrow">
-                        <div class="logo">MemoryOrder </div>
+                        <img src="memorderlogoorange.png" alt="logo" class="logo">
+                        <div style="font-size:20px">MemOrder</div>
                         <div class="sortbtcont">
-                                <button id="sortbt">Sort Tabs</button>
+                                <button id="sortbt" class="btn btn-info">Sort Tabs</button>
                         </div>
                 </div>
                 <div class="tablistcont">
 
                         <table id="tablist">
+                                <tr class="firstLine"><th class="clock"></th><th class="tabname">Tab Title</th><th class="tabmem">Memory</th></tr>
 
                         </table>
                 </div>
                 <div class="closetimecont">
                         <div class="timein">
-                                <div id="timeafter" class="hide" >
-                                        <input type="time" id="timeformafter">
-                                        time after
-                                </div>
-
-                                        <label class="switch">
-                                                <input type="checkbox" id="timetoggle">
-                                                <span class="slider round"></span>
-                                        </label>
-
-                                        <div id="timeat">
-                                                time at
-                                                <input type="time" id="timeformat">
-                                        </div>
+                                <form class="tabber">
+                                        <label for="t1">After</label>
+                                        <input id="t1" name="mode" type="radio" value="after" checked>
+                                        <label for="t2">At</label>
+                                        <input id="t2" name="mode" value="at" type="radio">
+                                        <div class="blob"></div>
+                                </form>
+                                <input type="time" id="timeform" class="h30">
+                                <button id="scheduleclose" class="h30" >Schedule Close</button>
                         </div>
-                        <button id="scheduleclose">schedule close</button>
                         <div id="warningplaceholder"></div>
-
                 </div>
         </body>
         <script src="popup.js"></script>
