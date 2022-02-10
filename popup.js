@@ -146,7 +146,7 @@ function scheduleClose() {
 }
 
 getMemory((res) => {
-        //yaha par js se add kar dena cheeze
+        
         chrome.storage.local.get(['activeTimers'], (activeTimersres) => {
                 let activeTimers = activeTimersres["activeTimers"];
                 for (tabid in res) {
