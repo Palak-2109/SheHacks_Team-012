@@ -1,15 +1,8 @@
 body{
-        /*background-image: linear-gradient(#d97642, #c15050, #693c72);*/
         background-color: #1e212d;
         color: #e7e6e1;
         font-family: 'Quicksand', sans-serif;
-        /*aka*/
 }
-/* *{ */
-/*         background-image: url('img1.jpg'); */
-/*         background-blend-mode:lighten; */
-/*         background-repeat: no-repeat; */
-/* } */
 
 table{
         border-collapse: collapse;
@@ -24,7 +17,6 @@ tr{
 }
 
 .headerrow{
-        /* position:absolute; */
         height:30px;
         padding-bottom:10px;
         display:flex;
@@ -50,12 +42,9 @@ tr{
         border-radius: 4px;
         border: 10px 10px;
         background: rgb(172, 170, 170);
-        /*aka added border and bg*/
-        /*font-family: 'Ubuntu', sans-serif;*/
 }
 #scheduleclose{
         background:rgb(172, 170, 170);
-        /*aka*/
 }
 
 p{
@@ -71,7 +60,6 @@ p{
         position: absolute;
         display:inline;
         font-size: medium;
-        /* background-color:purple; */
 }
 
 .logo{
@@ -127,7 +115,6 @@ tr{
 
 .timein {
         max-height:50px;
-        /* min-height: 100vh; */
         padding-top:10;
         display: flex;
         align-items: center;
